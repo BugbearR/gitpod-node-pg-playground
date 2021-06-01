@@ -10,8 +10,8 @@ const client = new Client({
 client.connect();
 
 const query = {
-    text: "SELECT $1 || $2",
-    values: [ 'Hello,', 'world!' ]
+    text: "SELECT $1 || $2 as hello",
+    values: [ "Hello,", "world!" ]
 };
 
 // client.query(query)
