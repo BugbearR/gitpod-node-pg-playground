@@ -1,0 +1,11 @@
+{
+  "name": "@bugbearr/hello-http:",
+  "version": "0.0.1",
+  "description": "Hello, world! by http",
+  "main": "index.js",
+  "author": "BugbearR",
+  "license": "CC0-1.0",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
