@@ -1,6 +1,6 @@
-var { Client } = require('pg');
+const { Client } = require('pg');
 
-var client = new Client({
+const client = new Client({
     user: "gitpod",
     host: "localhost",
     database: "hello",
@@ -9,15 +9,29 @@ var client = new Client({
 
 client.connect();
 
-var query = {
+const query = {
     text: "SELECT $1 || $2",
     values: [ 'Hello,', 'world!' ]
-}
+};
 
-client.query(query)
-    .then((res) => {
+// client.query(query)
+//     .then((res) => {
+//         console.log(res.rows[0]);
+//         client.end();
+//     })
+//     .catch((err) => {
+//         console.log(err.stack);
+//         client.end();
+//     });
+(async () => {
+    try {
+        const res = await client.query(query);
         console.log(res.rows[0]);
-    })
-    .catch((err) => {
-        console.log(err.stack);
-    });
+    }
+    catch (e) {
+        console.log(e.stack);
+    }
+    finally {
+        client.end();
+    }
+})();
