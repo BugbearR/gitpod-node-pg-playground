@@ -3,7 +3,7 @@ const { Client } = require('pg');
 const client = new Client({
     user: "gitpod",
     host: "localhost",
-    database: "hello",
+    database: "template1",
     port: 5432
 });
 
