@@ -1,5 +1,5 @@
 {
-  "name": "@bugbearr/hello-http:",
+  "name": "@bugbearr/hello-http",
   "version": "0.0.1",
   "description": "Hello, world! by http",
   "main": "index.js",
