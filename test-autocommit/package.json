@@ -1,0 +1,14 @@
+{
+  "name": "@bugbearr/test-autocommit",
+  "version": "0.0.1",
+  "description": "Test autocommit by pg",
+  "main": "index.js",
+  "author": "BugbearR",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "pg": "^8.6.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
