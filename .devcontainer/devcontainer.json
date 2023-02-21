@@ -1,0 +1,7 @@
+{
+    "name": "devcontainer-typescript",
+    // "image": "mcr.microsoft.com/devcontainers/typescript-node:16-bullseye"
+    "dockerComposeFile": [ "docker-compose.yml" ],
+    "service": "devcontainer",
+    "workspaceFolder": "/home/node/workspace"
+}
