@@ -1,0 +1,15 @@
+{
+  "name": "@bugbearr/test-escapeliteral",
+  "version": "0.0.1",
+  "description": "Test escapeLiteral",
+  "main": "index.js",
+  "author": "BugbearR",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "pg": "^8.9.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "preinstall": "npx only-allow pnpm"
+  }
+}
